@@ -1,0 +1,123 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  padding: var(--space-md) 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.wordmark:hover {
+  color: var(--signal);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--signal);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-xl);
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--signal);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover {
+  color: var(--signal);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 var(--space-md);
+    gap: var(--space-md);
+  }
+
+  .wordmark {
+    font-size: 0.75rem;
+  }
+
+  .nav {
+    gap: var(--space-md);
+    justify-content: flex-start;
+    flex: 1;
+    margin: 0 var(--space-md);
+    overflow-x: auto;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+}
