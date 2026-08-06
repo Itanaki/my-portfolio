@@ -1,5 +1,5 @@
 import { profile } from '../data/resume';
-import './Contact.css';
+import '../styles/Contact.css';
 
 export function Contact() {
   return (

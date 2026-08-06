@@ -1,5 +1,5 @@
 import { experience } from '../data/resume';
-import './Experience.css';
+import '../styles/Experience.css';
 
 export function Experience() {
   return (

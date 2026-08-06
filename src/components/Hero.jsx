@@ -1,5 +1,5 @@
 import { profile } from '../data/resume';
-import './Hero.css';
+import '../styles/Hero.css';
 
 export function Hero() {
   return (

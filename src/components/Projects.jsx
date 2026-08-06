@@ -1,5 +1,5 @@
 import { projects } from "../data/resume";
-import "./Projects.css";
+import "../styles/Projects.css";
 
 export function Projects() {
   return (

@@ -1,5 +1,5 @@
 import { useTheme } from '../hooks/useTheme';
-import './Header.css';
+import '../styles/Header.css';
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();

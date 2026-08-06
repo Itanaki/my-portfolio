@@ -1,5 +1,5 @@
 import { profile } from '../data/resume';
-import './About.css';
+import '../styles/About.css';
 
 export function About() {
   return (

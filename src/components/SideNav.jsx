@@ -1,5 +1,5 @@
 import { profile } from '../data/resume';
-import './SideNav.css';
+import '../styles/SideNav.css';
 
 export function SideNav() {
   return (

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { skills } from '../data/resume';
-import './Skills.css';
+import '../styles/Skills.css';
 
 function SkillBar({ skill, inView }) {
   const barRef = useRef(null);

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { curatedCertifications, allCertifications } from '../data/resume';
-import './Certifications.css';
+import '../styles/Certifications.css';
 
 export function Certifications() {
   const [showAll, setShowAll] = useState(false);
