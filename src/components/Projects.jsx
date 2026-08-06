@@ -17,7 +17,7 @@ export function Projects() {
                 className={`project-entry ${idx % 2 === 0 ? "left" : "right"}`}
               >
                 <div className="project-image">
-                  <div className="placeholder"></div>
+                  <img src={project.image} alt={project.title} className="project-thumb"/>
                 </div>
 
                 <div className="project-info">

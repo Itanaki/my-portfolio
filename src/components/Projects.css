@@ -58,6 +58,8 @@
   opacity: 0.5;
 }
 
+.project-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
 .project-info {
   display: flex;
   flex-direction: column;

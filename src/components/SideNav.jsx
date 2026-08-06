@@ -26,7 +26,7 @@ export function SideNav() {
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/enzo-padual/"
           target="_blank"
           rel="noopener noreferrer"
           className="side-nav-link"

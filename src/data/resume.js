@@ -108,12 +108,13 @@ export const projects = [
       "Knex",
       "Vite",
       "Material UI",
-      "TypesScript",
+      "TypeScript",
       "Vercel",
       "Render",
     ],
     link: "https://github.com/Itanaki/todo-app",
     demo: "https://todo-app-nine-sandy-59.vercel.app/",
+    image: 'src/assets/todo-app-ss.png'
   },
   {
     title: "Stocks Listing App",
@@ -131,6 +132,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/Stock-Listing-App",
     demo: "https://stock-listing-app-black.vercel.app/",
+    image: 'src/assets/stock-listing-app.png'
   },
   {
     title:
@@ -141,9 +143,10 @@ export const projects = [
     tech: ["React.js", "Firebase", "Koa", "ESP32", "ETL Pipeline"],
     link: "https://github.com/Itanaki/softdes-app",
     demo: "https://itanaki.github.io/softdes-app/#/monitoring",
+    image: 'src/assets/web-app-fish-silage-monitor.png'
   },
   {
-    title: "Adaptive Fish Silage Fermentation Control System",
+    title: "Mobile App - Adaptive Fish Silage Fermentation Control System",
     year: 2025,
     description:
       "React Native mobile app for real-time monitoring and control. Calibrated and integrated IoT sensors (load-cell, pH, temperature, ammonia) with a reliable data pipeline.",
