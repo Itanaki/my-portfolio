@@ -1,10 +1,13 @@
 import { profile } from '../data/resume';
 import portraitImage from '../assets/me.png';
+import { GeometricBackground } from './GeometricBackground';
 import '../styles/Hero.css';
+import '../styles/GeometricBackground.css';
 
 export function Hero() {
   return (
     <section className="hero">
+      <GeometricBackground />
       <div className="hero-content">
         <div className="hero-grid">
           <div className="hero-main">

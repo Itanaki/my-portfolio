@@ -1,10 +1,13 @@
 import { profile } from '../data/resume';
+import { useInView } from '../hooks/useInView';
 import '../styles/Contact.css';
 
 export function Contact() {
+  const [ref, isInView] = useInView();
+
   return (
-    <section className="contact" id="contact">
-      <div className="contact-content">
+    <section className="contact" id="contact" ref={ref}>
+      <div className={`contact-content ${isInView ? 'animate' : ''}`}>
         <h2>Get in Touch</h2>
 
         <div className="contact-block">

@@ -18,6 +18,11 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   margin-bottom: var(--space-2xl);
+  opacity: 0;
+}
+
+.contact-content.animate .contact-block {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .contact-prompt {
@@ -27,6 +32,17 @@
   color: var(--signal);
   margin-bottom: var(--space-xl);
   animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
