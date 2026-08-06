@@ -45,7 +45,11 @@
 .placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--surface-raised) 0%, var(--surface) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--surface-raised) 0%,
+    var(--surface) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,4 +162,29 @@
   .project-header h3 {
     font-size: 1.125rem;
   }
+}
+
+.project-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-sm);
+}
+
+.project-button.secondary {
+  border-color: var(--text-muted);
+  color: var(--text);
+  background: transparent;
+}
+
+.project-button.secondary:hover {
+  border-color: var(--signal);
+  color: #0a1420;
+  background: var(--signal);
+}
+
+.project-link-missing {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
