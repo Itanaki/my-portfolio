@@ -1,0 +1,46 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="128" cy="128" r="120" fill="#0F172A"/>
+
+  <!-- Monitor -->
+  <rect x="56" y="60" width="144" height="96" rx="12"
+        stroke="#38BDF8" stroke-width="8" fill="#111827"/>
+
+  <!-- Code Brackets -->
+  <path d="M102 88 L82 108 L102 128"
+        stroke="#22C55E"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <path d="M154 88 L174 108 L154 128"
+        stroke="#22C55E"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Slash -->
+  <path d="M136 82 L120 134"
+        stroke="#FFFFFF"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Database -->
+  <ellipse cx="128" cy="178" rx="38" ry="12"
+           stroke="#38BDF8" stroke-width="6" fill="#111827"/>
+  <path d="M90 178V198C90 205 107 210 128 210C149 210 166 205 166 198V178"
+        stroke="#38BDF8" stroke-width="6" fill="#111827"/>
+  <path d="M90 188C90 195 107 200 128 200C149 200 166 195 166 188"
+        stroke="#38BDF8" stroke-width="4"/>
+
+  <!-- Growth Arrow -->
+  <path d="M170 72 L190 72 L190 92"
+        stroke="#FACC15"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M170 92 L190 72"
+        stroke="#FACC15"
+        stroke-width="6"
+        stroke-linecap="round"/>
+</svg>
