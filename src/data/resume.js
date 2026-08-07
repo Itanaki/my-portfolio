@@ -14,8 +14,8 @@ export const skills = [
     items: [
       { name: "React", level: 4, yearsExp: 2, lastUsed: 2026 },
       { name: "TypeScript", level: 3, yearsExp: 0.1, lastUsed: 2026 },
-      { name: "JavaScript", level: 4, yearsExp: 4, lastUsed: 2026 },
-      { name: "HTML / CSS", level: 4, yearsExp: 4, lastUsed: 2026 },
+      { name: "JavaScript", level: 4, yearsExp: 1, lastUsed: 2026 },
+      { name: "HTML / CSS", level: 4, yearsExp: 1, lastUsed: 2026 },
       { name: "React Native", level: 3, yearsExp: 1, lastUsed: 2025 },
       { name: "MUI", level: 3, yearsExp: 0.4, lastUsed: 2026 },
     ],

@@ -9,6 +9,15 @@
   overflow: hidden;
 }
 
+.hero-bg-parallax {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 .hero-content {
   max-width: 1200px;
   width: 100%;
