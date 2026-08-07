@@ -173,6 +173,7 @@ export const projects = [
 ];
 
 export const curatedCertifications = [
+  { name: "AWS Cloud Quest: Cloud Practioner", date: "Aug 2026" },
   { name: "React 18 / 19 Course", date: "Mar 2026" },
   { name: "React & TypeScript - The Practical Guide", date: "Mar 2026" },
   { name: "The Ultimate Redux Course 2026", date: "Mar 2026" },

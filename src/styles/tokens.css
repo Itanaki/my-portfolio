@@ -12,16 +12,16 @@
 }
 
 :root[data-theme='light'] {
-  --bg: #f3f7f8;
-  --surface: #ffffff;
-  --surface-raised: #e7eff1;
+  --bg: #f0ebe5;
+  --surface: #faf8f6;
+  --surface-raised: #ede8e2;
   --signal: #0e8c82;
   --alert: #b5720e;
   --text: #0a1420;
-  --text-muted: #4b6270;
-  --border: rgba(14, 140, 130, 0.18);
-  --gradient-1: rgba(76, 175, 80, 0.08);
-  --gradient-2: rgba(33, 150, 243, 0.08);
+  --text-muted: #5d6b73;
+  --border: rgba(14, 140, 130, 0.14);
+  --gradient-1: rgba(76, 175, 80, 0.04);
+  --gradient-2: rgba(33, 150, 243, 0.04);
 }
 
 :root {
@@ -65,7 +65,7 @@ body {
 }
 
 html[data-theme='light'] body {
-  background: linear-gradient(135deg, #f3f7f8 0%, #e8f5f0 40%, #f0f3fb 100%);
+  background: linear-gradient(135deg, #f0ebe5 0%, #ece7e0 40%, #ede8e2 100%);
   background-attachment: fixed;
 }
 
