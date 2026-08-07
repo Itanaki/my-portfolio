@@ -114,7 +114,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/todo-app",
     demo: "https://todo-app-nine-sandy-59.vercel.app/",
-    image: 'src/assets/todo-app-ss.png'
+    image: "src/assets/todo-app-ss.png",
   },
   {
     title: "Stocks Listing App",
@@ -132,7 +132,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/Stock-Listing-App",
     demo: "https://stock-listing-app-black.vercel.app/",
-    image: 'src/assets/stock-listing-app.png'
+    image: "src/assets/stock-listing-app.png",
   },
   {
     title:
@@ -143,7 +143,7 @@ export const projects = [
     tech: ["React.js", "Firebase", "Koa", "ESP32", "ETL Pipeline"],
     link: "https://github.com/Itanaki/softdes-app",
     demo: "https://itanaki.github.io/softdes-app/#/monitoring",
-    image: 'src/assets/web-app-fish-silage-monitor.png'
+    image: "src/assets/web-app-fish-silage-monitor.png",
   },
   {
     title: "Mobile App - Adaptive Fish Silage Fermentation Control System",
@@ -158,7 +158,8 @@ export const projects = [
       "Real-time sync",
     ],
     link: "https://github.com/Itanaki/dynamic-app-with-notif",
-    demo: "",
+    demo: "https://www.youtube.com/playlist?list=PLa_BGrugAPYU",
+    image: "src/assets/Fish_Silage_3Screens.jpg",
   },
   {
     title: "Portable Solar-Powered Desalination System",
@@ -166,6 +167,8 @@ export const projects = [
     description:
       "Designed and built a modular, portable desalination unit with integrated ultra-filtration for safe drinking water. Led core design, integrated PPM sensors with real-time validation.",
     tech: ["Hardware design", "IoT", "Data logging", "PPM sensor logic"],
+    link: "https://drive.google.com/file/d/1z3au0HN108CW0s3RKRtbrLBhzxD6dv2c/view?usp=drive_link",
+    image: "src/assets/High-Level Diagram.png",
   },
 ];
 
