@@ -1,10 +1,13 @@
 import { projects } from "../data/resume";
+import { useInView } from "../hooks/useInView";
 import "../styles/Projects.css";
 
 export function Projects() {
+  const [ref, isInView] = useInView();
+
   return (
-    <section className="projects" id="work">
-      <div className="projects-content">
+    <section className="projects" id="work" ref={ref}>
+      <div className={`projects-content ${isInView ? 'animate' : ''}`}>
         <h2>Featured Projects</h2>
 
         <div className="projects-list">

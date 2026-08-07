@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import { curatedCertifications, allCertifications } from '../data/resume';
+import { useInView } from '../hooks/useInView';
 import '../styles/Certifications.css';
 
 export function Certifications() {
   const [showAll, setShowAll] = useState(false);
+  const [ref, isInView] = useInView();
 
   const extraCerts = allCertifications.filter(
     (cert) => !curatedCertifications.some((c) => c.name === cert.name)
   );
 
   return (
-    <section className="certifications">
-      <div className="certs-content">
+    <section className="certifications" ref={ref}>
+      <div className={`certs-content ${isInView ? 'animate' : ''}`}>
         <h2>Certifications & Learning</h2>
 
         <div className="cert-group">

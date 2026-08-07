@@ -1,10 +1,13 @@
 import { profile } from '../data/resume';
+import { useInView } from '../hooks/useInView';
 import '../styles/About.css';
 
 export function About() {
+  const [ref, isInView] = useInView();
+
   return (
-    <section className="about" id="about">
-      <div className="about-content">
+    <section className="about" id="about" ref={ref}>
+      <div className={`about-content ${isInView ? 'animate' : ''}`}>
         <h2>About</h2>
         <p className="about-text">{profile.bio}</p>
         <div className="about-highlights">

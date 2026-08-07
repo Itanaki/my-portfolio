@@ -5,12 +5,16 @@
   justify-content: center;
   padding: var(--space-3xl) var(--space-lg);
   background: linear-gradient(135deg, var(--surface) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 1200px;
   width: 100%;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid {
@@ -30,7 +34,7 @@
   letter-spacing: -0.02em;
   color: var(--text);
   margin-bottom: var(--space-md);
-  animation: slideUp 0.8s ease-out;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-role {
@@ -38,7 +42,7 @@
   font-size: 1.5rem;
   color: var(--signal);
   font-weight: 600;
-  animation: slideUp 0.8s ease-out 0.1s both;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
 }
 
 .status-strip {
@@ -50,7 +54,7 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  animation: slideUp 0.8s ease-out 0.2s both;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
 .status-indicator {
@@ -93,7 +97,7 @@
 .hero-cta {
   display: flex;
   gap: var(--space-md);
-  animation: slideUp 0.8s ease-out 0.3s both;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
 .cta-button {
@@ -112,7 +116,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slideUp 0.8s ease-out 0.2s both;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
 .portrait-frame {
@@ -233,9 +237,11 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 

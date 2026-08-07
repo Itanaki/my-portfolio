@@ -41,6 +41,11 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  opacity: 0;
+}
+
+.certs-content.animate .cert-chip {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .cert-chip:hover {
@@ -116,6 +121,17 @@
   color: var(--text-muted);
   white-space: nowrap;
   letter-spacing: 0.05em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {

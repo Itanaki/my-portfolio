@@ -1,10 +1,13 @@
 import { experience } from '../data/resume';
+import { useInView } from '../hooks/useInView';
 import '../styles/Experience.css';
 
 export function Experience() {
+  const [ref, isInView] = useInView();
+
   return (
-    <section className="experience">
-      <div className="experience-content">
+    <section className="experience" ref={ref}>
+      <div className={`experience-content ${isInView ? 'animate' : ''}`}>
         <h2>Experience</h2>
 
         <div className="timeline">
