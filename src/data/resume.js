@@ -1,3 +1,9 @@
+import todoImg from "../assets/todo-app-ss.png";
+import stockImg from "../assets/stock-listing-app.png";
+import webFishImg from "../assets/web-app-fish-silage-monitor.png";
+import fishScreens from "../assets/Fish_Silage_3Screens.jpg";
+import highLevel from "../assets/High-Level Diagram.png";
+
 export const profile = {
   name: "Enzo Daren B. Padual",
   role: "Programmer Analyst Trainee",
@@ -114,7 +120,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/todo-app",
     demo: "https://todo-app-nine-sandy-59.vercel.app/",
-    image: "src/assets/todo-app-ss.png",
+    image: todoImg,
   },
   {
     title: "Stocks Listing App",
@@ -132,7 +138,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/Stock-Listing-App",
     demo: "https://stock-listing-app-black.vercel.app/",
-    image: "src/assets/stock-listing-app.png",
+    image: stockImg,
   },
   {
     title:
@@ -143,7 +149,7 @@ export const projects = [
     tech: ["React.js", "Firebase", "Koa", "ESP32", "ETL Pipeline"],
     link: "https://github.com/Itanaki/softdes-app",
     demo: "https://itanaki.github.io/softdes-app/#/monitoring",
-    image: "src/assets/web-app-fish-silage-monitor.png",
+    image: webFishImg,
   },
   {
     title: "Mobile App - Adaptive Fish Silage Fermentation Control System",
@@ -159,7 +165,7 @@ export const projects = [
     ],
     link: "https://github.com/Itanaki/dynamic-app-with-notif",
     demo: "https://www.youtube.com/playlist?list=PLa_BGrugAPYU",
-    image: "src/assets/Fish_Silage_3Screens.jpg",
+    image: fishScreens,
   },
   {
     title: "Portable Solar-Powered Desalination System",
@@ -168,7 +174,7 @@ export const projects = [
       "Designed and built a modular, portable desalination unit with integrated ultra-filtration for safe drinking water. Led core design, integrated PPM sensors with real-time validation.",
     tech: ["Hardware design", "IoT", "Data logging", "PPM sensor logic"],
     link: "https://drive.google.com/file/d/1z3au0HN108CW0s3RKRtbrLBhzxD6dv2c/view?usp=drive_link",
-    image: "src/assets/High-Level Diagram.png",
+    image: highLevel,
   },
 ];
 
