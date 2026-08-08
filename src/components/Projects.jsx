@@ -1,14 +1,16 @@
 import { projects } from "../data/resume";
 import { useInView } from "../hooks/useInView";
+import { useTypewriter } from "../hooks/useTypewriter";
 import "../styles/Projects.css";
 
 export function Projects() {
   const [ref, isInView] = useInView();
+  const headingRef = useTypewriter({ speed: 40 });
 
   return (
     <section className="projects" id="work" ref={ref}>
       <div className={`projects-content ${isInView ? 'animate' : ''}`}>
-        <h2>Featured Projects</h2>
+        <h2 ref={headingRef}>Featured Projects</h2>
 
         <div className="projects-list">
           {projects.map((project, idx) => {

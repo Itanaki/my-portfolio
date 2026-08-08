@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { skills } from '../data/resume';
+import { useTypewriter } from '../hooks/useTypewriter';
 import '../styles/Skills.css';
 
 function SkillBar({ skill, inView }) {
@@ -27,6 +28,7 @@ function SkillBar({ skill, inView }) {
 export function Skills() {
   const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
+  const headingRef = useTypewriter({ speed: 40 });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,7 +55,7 @@ export function Skills() {
   return (
     <section className="skills" id="skills" ref={sectionRef}>
       <div className="skills-content">
-        <h2>Technical Stack</h2>
+        <h2 ref={headingRef}>Technical Stack</h2>
 
         {skills.map((category) => (
           <div key={category.category} className="skill-category">

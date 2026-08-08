@@ -1,14 +1,16 @@
 import { experience } from '../data/resume';
 import { useInView } from '../hooks/useInView';
+import { useTypewriter } from '../hooks/useTypewriter';
 import '../styles/Experience.css';
 
 export function Experience() {
   const [ref, isInView] = useInView();
+  const headingRef = useTypewriter({ speed: 40 });
 
   return (
     <section className="experience" ref={ref}>
       <div className={`experience-content ${isInView ? 'animate' : ''}`}>
-        <h2>Experience</h2>
+        <h2 ref={headingRef}>Experience</h2>
 
         <div className="timeline">
           {experience.map((entry, idx) => (

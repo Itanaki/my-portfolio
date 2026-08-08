@@ -2,6 +2,7 @@ import { profile } from '../data/resume';
 import portraitImage from '../assets/me.png';
 import { GeometricBackground } from './GeometricBackground';
 import { useEffect, useRef } from 'react';
+import { useTypewriter } from '../hooks/useTypewriter';
 import '../styles/Hero.css';
 import '../styles/GeometricBackground.css';
 
@@ -9,6 +10,8 @@ export function Hero() {
   const bgRef = useRef(null);
   const scrollYRef = useRef(0);
   const animationFrameRef = useRef(null);
+  const titleRef = useTypewriter({ immediate: true, speed: 40 });
+  const roleRef = useTypewriter({ immediate: true, speed: 40 });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +44,8 @@ export function Hero() {
       <div className="hero-content">
         <div className="hero-grid">
           <div className="hero-main">
-            <h1 className="hero-title">Enzo Daren B. Padual</h1>
-            <p className="hero-role">{profile.role} at {profile.company}</p>
+            <h1 className="hero-title" ref={titleRef}>Enzo Daren B. Padual</h1>
+            <p className="hero-role" ref={roleRef}>{profile.role} at {profile.company}</p>
 
             <div className="status-strip">
               <span className="status-indicator">● {profile.status}</span>

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { curatedCertifications, allCertifications } from '../data/resume';
 import { useInView } from '../hooks/useInView';
+import { useTypewriter } from '../hooks/useTypewriter';
 import '../styles/Certifications.css';
 
 export function Certifications() {
   const [showAll, setShowAll] = useState(false);
   const [ref, isInView] = useInView();
+  const headingRef = useTypewriter({ speed: 40 });
 
   const extraCerts = allCertifications.filter(
     (cert) => !curatedCertifications.some((c) => c.name === cert.name)
@@ -13,8 +15,8 @@ export function Certifications() {
 
   return (
     <section className="certifications" ref={ref}>
-      <div className={`certs-content ${isInView ? 'animate' : ''}`}>
-        <h2>Certifications & Learning</h2>
+      <div className={`certs-content ${isInView ? 'animate' : ''}`} >
+        <h2 ref={headingRef}>Certifications & Learning</h2>
 
         <div className="cert-group">
           <h3 className="cert-group-title">Highlighted Certifications</h3>

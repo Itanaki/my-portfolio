@@ -1,14 +1,16 @@
 import { profile } from '../data/resume';
 import { useInView } from '../hooks/useInView';
+import { useTypewriter } from '../hooks/useTypewriter';
 import '../styles/Contact.css';
 
 export function Contact() {
   const [ref, isInView] = useInView();
+  const headingRef = useTypewriter({ speed: 40 });
 
   return (
     <section className="contact" id="contact" ref={ref}>
       <div className={`contact-content ${isInView ? 'animate' : ''}`}>
-        <h2>Get in Touch</h2>
+        <h2 ref={headingRef}>Get in Touch</h2>
 
         <div className="contact-block">
           <p className="contact-prompt">→ Let's work together</p>
