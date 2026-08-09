@@ -10,11 +10,16 @@ import {
   DiDocker,
   DiLinux,
   DiTerminal,
+  DiVisualstudio,
   DiCode,
 } from 'react-icons/di';
 
+import { BsTypescript } from "react-icons/bs";
 import { VscAzure } from "react-icons/vsc";
-import { SiAnsible } from "react-icons/si";
+import { SiAnsible, SiPostman } from "react-icons/si";
+
+import { Icon } from "@iconify/react";
+
 
 // Color palette by category
 const COLORS = {
@@ -29,7 +34,7 @@ const COLORS = {
 export const SKILL_ICONS = {
   // Frontend
   React: { icon: DiReact, color: COLORS.frontend },
-  TypeScript: { icon: DiCode, color: COLORS.frontend },
+  TypeScript: { icon: BsTypescript, color: COLORS.frontend },
   JavaScript: { icon: DiJavascript, color: COLORS.frontend },
   'HTML / CSS': { icon: DiHtml5, color: COLORS.frontend },
   'React Native': { icon: DiReact, color: COLORS.frontend },
@@ -54,7 +59,8 @@ export const SKILL_ICONS = {
   'Linux Admin': { icon: DiLinux, color: COLORS.infrastructure },
   Ansible: { icon: SiAnsible, color: COLORS.infrastructure },
   'Bash Scripting': { icon: DiTerminal, color: COLORS.infrastructure },
-  'VS Code': { icon: DiCode, color: COLORS.infrastructure },
+  'VS Code': { icon: DiVisualstudio, color: COLORS.infrastructure },
+  'Postman': { icon: SiPostman, color: COLORS.infrastructure },
 
   // AI & ML
   'GitHub Copilot': { icon: DiCode, color: COLORS.ai },

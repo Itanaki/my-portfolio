@@ -54,6 +54,7 @@ export const skills = [
       { name: "Ansible", level: 3, yearsExp: 2, lastUsed: 2024 },
       { name: "Bash Scripting", level: 3, yearsExp: 2, lastUsed: 2024 },
       { name: "VS Code", level: 4, yearsExp: 4, lastUsed: 2026 },
+      { name: "Postman", level: 3, yearsExp: 1, lastUsed: 2026 },
     ],
   },
 ];
