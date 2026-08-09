@@ -1,26 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { skills } from '../data/resume';
 import { useTypewriter } from '../hooks/useTypewriter';
+import { getSkillIcon } from '../utils/skillIcons';
 import '../styles/Skills.css';
 
-function SkillBar({ skill, inView }) {
-  const barRef = useRef(null);
-
-  useEffect(() => {
-    if (inView && barRef.current) {
-      barRef.current.style.width = `${(skill.level / 5) * 100}%`;
-    }
-  }, [inView, skill.level]);
+function SkillPill({ skill }) {
+  const { icon: IconComponent, color } = getSkillIcon(skill.name);
 
   return (
-    <div className="skill-item">
-      <div className="skill-header">
-        <span className="skill-name">{skill.name}</span>
-        <span className="skill-meta">{skill.level}/5 · {skill.yearsExp}y · {skill.lastUsed}</span>
-      </div>
-      <div className="skill-bar-bg">
-        <div className="skill-bar" ref={barRef}></div>
-      </div>
+    <div className="skill-pill" style={{ '--skill-color': color }}>
+      <IconComponent className="skill-icon" />
+      <span className="skill-pill-name">{skill.name}</span>
     </div>
   );
 }
@@ -55,14 +45,14 @@ export function Skills() {
   return (
     <section className="skills" id="skills" ref={sectionRef}>
       <div className="skills-content">
-        <h2 ref={headingRef}>Technical Stack</h2>
+        <h2 ref={headingRef}>Technical Skills</h2>
 
         {skills.map((category) => (
           <div key={category.category} className="skill-category">
             <h3 className="category-title">{category.category}</h3>
-            <div className="skill-list">
+            <div className="skill-grid">
               {category.items.map((item) => (
-                <SkillBar key={item.name} skill={item} inView={inView} />
+                <SkillPill key={item.name} skill={item} />
               ))}
             </div>
           </div>

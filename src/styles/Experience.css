@@ -34,8 +34,8 @@
 
 .timeline-marker {
   position: absolute;
-  left: -2.75rem;
-  top: 0.5rem;
+  left: -2.25rem;
+  top: 6rem;
   width: 0.625rem;
   height: 0.625rem;
   background: var(--signal);
