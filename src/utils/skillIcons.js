@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   DiReact,
   DiNodejs,
@@ -21,6 +22,8 @@ import { SiAnsible, SiPostman } from "react-icons/si";
 import { Icon } from "@iconify/react";
 
 
+const iconify = (name) => (props) => React.createElement(Icon, { icon: name, ...props });
+
 // Color palette by category
 const COLORS = {
   frontend: '#3B82F6', // Blue
@@ -35,17 +38,17 @@ export const SKILL_ICONS = {
   // Frontend
   React: { icon: DiReact, color: COLORS.frontend },
   TypeScript: { icon: BsTypescript, color: COLORS.frontend },
-  JavaScript: { icon: DiJavascript, color: COLORS.frontend },
+  JavaScript: { icon: iconify('tabler:brand-javascript'), color: COLORS.frontend },
   'HTML / CSS': { icon: DiHtml5, color: COLORS.frontend },
   'React Native': { icon: DiReact, color: COLORS.frontend },
-  MUI: { icon: DiReact, color: COLORS.frontend },
+  MUI: { icon: iconify('simple-icons:mui'), color: COLORS.frontend },
 
   // Backend
   'Node.js': { icon: DiNodejs, color: COLORS.backend },
-  'C#/.NET': { icon: DiCode, color: COLORS.backend },
-  Fastify: { icon: DiNodejs, color: COLORS.backend },
-  'REST API': { icon: DiCode, color: COLORS.backend },
-  'Knex.js': { icon: DiDatabase, color: COLORS.backend },
+  'C#/.NET': { icon: iconify('bxl:c-sharp'), color: COLORS.backend },
+  Fastify: { icon: iconify('devicon-plain:fastify-wordmark'), color: COLORS.backend },
+  'REST API': { icon: iconify('dashicons:rest-api'), color: COLORS.backend },
+  'Knex.js': { icon: iconify('simple-icons:knexdotjs'), color: COLORS.backend },
 
   // Database
   MSSQL: { icon: DiMsqlServer, color: COLORS.database },
