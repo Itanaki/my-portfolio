@@ -42,6 +42,7 @@ export const SKILL_ICONS = {
   'HTML / CSS': { icon: DiHtml5, color: COLORS.frontend },
   'React Native': { icon: DiReact, color: COLORS.frontend },
   MUI: { icon: iconify('simple-icons:mui'), color: COLORS.frontend },
+  BoothStrap: { icon: iconify('simple-icons:bootstrap'), color: COLORS.frontend },
 
   // Backend
   'Node.js': { icon: DiNodejs, color: COLORS.backend },
@@ -49,6 +50,7 @@ export const SKILL_ICONS = {
   Fastify: { icon: iconify('devicon-plain:fastify-wordmark'), color: COLORS.backend },
   'REST API': { icon: iconify('dashicons:rest-api'), color: COLORS.backend },
   'Knex.js': { icon: iconify('simple-icons:knexdotjs'), color: COLORS.backend },
+  'Python': { icon: iconify('simple-icons:python'), color: COLORS.backend },
 
   // Database
   MSSQL: { icon: DiMsqlServer, color: COLORS.database },
@@ -64,12 +66,8 @@ export const SKILL_ICONS = {
   'Bash Scripting': { icon: DiTerminal, color: COLORS.infrastructure },
   'VS Code': { icon: DiVisualstudio, color: COLORS.infrastructure },
   'Postman': { icon: SiPostman, color: COLORS.infrastructure },
-
-  // AI & ML
-  'GitHub Copilot': { icon: DiCode, color: COLORS.ai },
-  ChatGPT: { icon: DiCode, color: COLORS.ai },
-  Claude: { icon: DiCode, color: COLORS.ai },
-  'Microsoft Copilot': { icon: DiCode, color: COLORS.ai },
+  'Claude': { icon: iconify('ri:claude-fill'), color: COLORS.infrastructure },
+  'Github Copilot': { icon: iconify('simple-icons:githubcopilot'), color: COLORS.infrastructure },
 };
 
 // Get icon and color for a skill

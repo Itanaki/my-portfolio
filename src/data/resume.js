@@ -3,6 +3,7 @@ import stockImg from "../assets/stock-listing-app.png";
 import webFishImg from "../assets/web-app-fish-silage-monitor.png";
 import fishScreens from "../assets/Fish_Silage_3Screens.jpg";
 import highLevel from "../assets/High-Level Diagram.png";
+import ResumePDF from "../assets/RESUME-2025-Padual_E.pdf";
 
 export const profile = {
   name: "Enzo Daren B. Padual",
@@ -12,6 +13,7 @@ export const profile = {
   github: "https://github.com/Itanaki",
   bio: "Motivated full-stack developer with hands-on experience in enterprise web applications using React, TypeScript, and Node.js. Currently at Cognizant working on form management solutions with CliftonLarsonAllen, with a background in Computer Engineering and Linux systems administration. Continuously learning cloud infrastructure, microservices, and AI-assisted development.",
   status: "Online",
+  resume: ResumePDF,
 };
 
 export const skills = [
@@ -24,6 +26,7 @@ export const skills = [
       { name: "HTML / CSS", level: 4, yearsExp: 1, lastUsed: 2026 },
       { name: "React Native", level: 3, yearsExp: 1, lastUsed: 2025 },
       { name: "MUI", level: 3, yearsExp: 0.4, lastUsed: 2026 },
+      { name: "BoothStrap", level: 3, yearsExp: 0.4, lastUsed: 2026 },
     ],
   },
   {
@@ -34,6 +37,7 @@ export const skills = [
       { name: "Fastify", level: 3, yearsExp: 0.5, lastUsed: 2026 },
       { name: "REST API", level: 3, yearsExp: 0.4, lastUsed: 2026 },
       { name: "Knex.js", level: 3, yearsExp: 0.4, lastUsed: 2026 },
+      { name: "Python"},
     ],
   },
   {
@@ -55,6 +59,8 @@ export const skills = [
       { name: "Bash Scripting", level: 3, yearsExp: 2, lastUsed: 2024 },
       { name: "VS Code", level: 4, yearsExp: 4, lastUsed: 2026 },
       { name: "Postman", level: 3, yearsExp: 1, lastUsed: 2026 },
+      { name: "Claude"},
+      { name: "Github Copilot"},
     ],
   },
 ];

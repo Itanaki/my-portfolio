@@ -11,23 +11,38 @@ export function Contact() {
     <section className="contact" id="contact" ref={ref}>
       <div className={`contact-content ${isInView ? 'animate' : ''}`}>
         <h2 ref={headingRef}>Get in Touch</h2>
+        <div className="contact-row">
+          <div className="contact-block">
+            <p className="contact-prompt">→ Let's work together</p>
 
-        <div className="contact-block">
-          <p className="contact-prompt">→ Let's work together</p>
+            <div className="contact-links">
+              <a href={`mailto:${profile.email}`} className="contact-link">
+                <span className="link-label">Email</span>
+                <span className="link-value">{profile.email}</span>
+              </a>
 
-          <div className="contact-links">
-            <a href={`mailto:${profile.email}`} className="contact-link">
-              <span className="link-label">Email</span>
-              <span className="link-value">{profile.email}</span>
+              <a href={profile.github} target="_blank" rel="noopener noreferrer" className="contact-link">
+                <span className="link-label">GitHub</span>
+                <span className="link-value">github.com/Itanaki</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="cv-block">
+            <p className="cv-prompt">→ View my full experience, education, skills, and qualification below</p>
+            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="cv-link">
+              <span className="link-label">Curriculum Vitae →</span>
+              <span className="link-value">Download</span>
             </a>
 
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="contact-link">
-              <span className="link-label">GitHub</span>
-              <span className="link-value">github.com/Itanaki</span>
+            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="cv-link">
+              <span className="link-label">Resume →</span>
+              <span className="link-value">Download</span>
             </a>
           </div>
+  
         </div>
-
+        
         <footer className="footer">
           <p>
             <span className="footer-status">● Online</span>
