@@ -4,6 +4,7 @@ import webFishImg from "../assets/web-app-fish-silage-monitor.png";
 import fishScreens from "../assets/Fish_Silage_3Screens.jpg";
 import highLevel from "../assets/High-Level Diagram.png";
 import ResumePDF from "../assets/RESUME-2025-Padual_E.pdf";
+import sysQuizImg from "../assets/sysQuiz.png";
 
 export const profile = {
   name: "Enzo Daren B. Padual",
@@ -109,6 +110,29 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "System Design Quiz Application - With AI Gemini Integration",
+    year: 2026,
+    description:
+      "SysQuiz is an interactive platform for practicing system design through quizzes, progress tracking, leaderboards, badges, and daily AI-generated challenges.",
+    tech: [
+      "React.js",
+      "Supabase (PostgreSQL)",
+      "Node.js",
+      "Prisma ORM",
+      "Zod",
+      "Google Gemini API",
+      "Vite",
+      "Material UI",
+      "TypeScript",
+      "Vercel",
+      "Render",
+      "CORS and Dotenv"
+    ],
+    link: "https://github.com/Itanaki/system-design-quiz-app",
+    demo: "https://system-design-quiz-app.vercel.app/",
+    image: sysQuizImg,
+  },
   {
     title: "Todo Board Application",
     year: 2026,
