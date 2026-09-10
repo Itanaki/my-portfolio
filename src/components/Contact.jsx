@@ -1,7 +1,7 @@
-import { profile } from '../data/resume';
-import { useInView } from '../hooks/useInView';
-import { useTypewriter } from '../hooks/useTypewriter';
-import '../styles/Contact.css';
+import { profile } from "../data/resume";
+import { useInView } from "../hooks/useInView";
+import { useTypewriter } from "../hooks/useTypewriter";
+import "../styles/Contact.css";
 
 export function Contact() {
   const [ref, isInView] = useInView();
@@ -9,7 +9,7 @@ export function Contact() {
 
   return (
     <section className="contact" id="contact" ref={ref}>
-      <div className={`contact-content ${isInView ? 'animate' : ''}`}>
+      <div className={`contact-content ${isInView ? "animate" : ""}`}>
         <h2 ref={headingRef}>Get in Touch</h2>
         <div className="contact-row">
           <div className="contact-block">
@@ -21,7 +21,12 @@ export function Contact() {
                 <span className="link-value">{profile.email}</span>
               </a>
 
-              <a href={profile.github} target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
                 <span className="link-label">GitHub</span>
                 <span className="link-value">github.com/Itanaki</span>
               </a>
@@ -29,24 +34,36 @@ export function Contact() {
           </div>
 
           <div className="cv-block">
-            <p className="cv-prompt">→ View my full experience, education, skills, and qualification below</p>
-            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="cv-link">
+            <p className="cv-prompt">
+              → View my full experience, education, skills, and qualification
+              below
+            </p>
+            <a
+              href={profile.cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-link"
+            >
               <span className="link-label">Curriculum Vitae →</span>
               <span className="link-value">Download</span>
             </a>
 
-            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="cv-link">
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-link"
+            >
               <span className="link-label">Resume →</span>
               <span className="link-value">Download</span>
             </a>
           </div>
-  
         </div>
-        
+
         <footer className="footer">
           <p>
-            <span className="footer-status">● Online</span>
-            · Built with React + Vite · © 2026 Enzo Padual
+            <span className="footer-status">● Online</span>· Built with React +
+            Vite · © 2026 Enzo Padual
           </p>
         </footer>
       </div>
