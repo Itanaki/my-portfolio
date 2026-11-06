@@ -6,6 +6,11 @@ import highLevel from "../assets/High-Level Diagram.png";
 import ResumePDF from "../assets/RESUME-2025-Padual_E.pdf";
 import CVPDF from "../assets/CDE CV - Enzo Padual.pdf";
 import sysQuizImg from "../assets/sysQuiz.png";
+import parkingHomeImg from "../assets/parking-home.png";
+import parkingCreateImg from "../assets/parking-create-reservation.jpg";
+import parkingReservationsImg from "../assets/parking-my-reservations.jpg";
+import parkingApprovalsImg from "../assets/parking-approvals.jpg";
+import parkingAvailabilityImg from "../assets/parking-slot-availability.jpg";
 
 export const profile = {
   name: "Enzo Daren B. Padual",
@@ -113,6 +118,26 @@ export const experience = [
 
 export const projects = [
   {
+    title: "PH Studio Parking Reservation System",
+    year: 2026,
+    description:
+      "Leading the ongoing design, development, and testing of a parking reservation system using Microsoft Power Apps, SharePoint Lists, and Power Automate. Developing reservation and approval workflows, parking slot availability management, automated notifications, data validation, and a responsive interface. Using Microsoft 365 Copilot and Claude AI to support development, workflow design, and iterative improvements.",
+    tech: [
+      "Microsoft Power Apps",
+      "SharePoint Lists",
+      "Power Automate",
+      "Microsoft 365 Copilot",
+      "Claude AI",
+    ],
+    screenshots: [
+      { src: parkingHomeImg, label: "Home dashboard" },
+      { src: parkingCreateImg, label: "Create reservation" },
+      { src: parkingReservationsImg, label: "My reservations" },
+      { src: parkingApprovalsImg, label: "Reservation approvals" },
+      { src: parkingAvailabilityImg, label: "Parking slot availability" },
+    ],
+  },
+  {
     title: "System Design Quiz Application - With AI Gemini Integration",
     year: 2026,
     description:
@@ -211,71 +236,97 @@ export const projects = [
   },
 ];
 
-export const curatedCertifications = [
-  { name: "AWS Cloud Quest: Cloud Practioner", date: "Aug 2026" },
-  { name: "React 18 / 19 Course", date: "Mar 2026" },
-  { name: "React & TypeScript - The Practical Guide", date: "Mar 2026" },
-  { name: "The Ultimate Redux Course 2026", date: "Mar 2026" },
-  {
-    name: "The Complete Microservices & Event-Driven Architecture",
-    date: "Mar 2026",
-  },
-  { name: "Prompt Engineering Foundation", date: "Apr 2026" },
-  { name: "Claude AI & Claude Code Integration", date: "May 2026" },
-  { name: "Azure OpenAI Services - The Complete Guide", date: "May 2026" },
-  { name: "AI Agents - Building Teams of LLM Agents", date: "Apr 2026" },
-];
-
 export const allCertifications = [
   { name: "Understanding Personality Types at Work", date: "Jan 2026" },
   { name: "How to Build Your Professional Network", date: "Jan 2026" },
-  {
-    name: "Accountability Training For Managers and Corporate Employees",
-    date: "Jan 2026",
-  },
-  {
-    name: "React 18 / 19 Course 2025 - Learn React JS the Fast Way",
-    date: "Mar 2026",
-  },
-  { name: "React & TypeScript - The Practical Guide", date: "Mar 2026" },
-  {
-    name: "The Ultimate Redux Course 2026 - [LATEST Redux-toolkit]",
-    date: "Mar 2026",
-  },
-  {
-    name: "The Complete Microservices & Event-Driven Architecture",
-    date: "Mar 2026",
-  },
-  {
-    name: "Microservices: Designing Highly Scalable Systems",
-    date: "Mar 2026",
-  },
+  { name: "Accountability Training for Managers and Corporate Employees", date: "Jan 2026" },
+  { name: "React 18 / 19 Course 2025 - Learn React JS the Fast Way", date: "Mar 2026" },
+  { name: "React & TypeScript - The Practical Guide", date: "Mar 2026", highlighted: true },
+  { name: "The Ultimate Redux Course 2026 - Latest Redux Toolkit", date: "Mar 2026" },
+  { name: "The Complete Microservices & Event-Driven Architecture", date: "Mar 2026", highlighted: true },
+  { name: "Microservices: Designing Highly Scalable Systems", date: "Mar 2026" },
   { name: "Microservices Architecture - The Complete Guide", date: "Mar 2026" },
-  { name: "Prompt Engineering Foundation", date: "Apr 2026" },
-  {
-    name: "Intro to AI Agents: Build an Army of Digital Workers with AI",
-    date: "Apr 2026",
-  },
-  {
-    name: "AI Agents: Building Teams of LLM Agents that Work For You",
-    date: "Apr 2026",
-  },
-  { name: "AI Agents - 101 Basics", date: "Apr 2026" },
-  { name: "Claude AI: The AI Assistant You'll Actually Use", date: "Apr 2026" },
-  {
-    name: "Claude, Claude Code, Claude Cowork, and Claude in MS Office",
-    date: "May 2026",
-  },
-  { name: "Claude Awareness Program", date: "May 2026" },
-  {
-    name: "Machine Learning for Absolute Beginners - Level 1",
-    date: "May 2026",
-  },
+  { name: "Python for Developers", date: "Aug 2026", highlighted: true },
+  { name: "C# Setting Up Development Environment", date: "Sep 2026" },
+  { name: "C# Fundamentals", date: "Sep 2026", highlighted: true },
+  { name: "C# Output Lab: Console Creatures", date: "Sep 2026" },
+  { name: "C# Data Types and Variables", date: "Sep 2026" },
+  { name: "C# Data Types Lab: Galactic Travel Agency", date: "Sep 2026" },
+  { name: "C# Numbers", date: "Sep 2026" },
+  { name: "C# Numbers Lab: Money Maker Live", date: "Sep 2026" },
+  { name: "C# Strings", date: "Sep 2026" },
+  { name: "C# Strings Lab: Mad Libs", date: "Sep 2026" },
+  { name: "C# Logic", date: "Oct 2026" },
+  { name: "C# Logic Lab: Space Expedition Boolean Adventure", date: "Oct 2026" },
+  { name: "C# Conditionals", date: "Oct 2026" },
+  { name: "C# Conditionals Lab: Choose Your Own Adventure", date: "Oct 2026" },
+  { name: "C# Conditionals Lab: Password Checker", date: "Oct 2026" },
+  { name: "C# Arrays", date: "Oct 2026" },
+  { name: "C# Arrays Lab: Space Mission Inventory", date: "Oct 2026" },
+  { name: "C# Loops", date: "Oct 2026" },
+  { name: "Machine Learning for Absolute Beginners - Level 1", date: "May 2026" },
   { name: "Executive Briefing: Deep Learning (DL)", date: "May 2026" },
-  {
-    name: "Executive Briefing: Natural Language Processing (NLP)",
-    date: "May 2026",
-  },
-  { name: "Azure OpenAI Services - The Complete Guide", date: "May 2026" },
-  { name: "Prompt Engineering - Dot Net", date: "Jun 2026" },
+  { name: "Executive Briefing: Natural Language Processing (NLP)", date: "May 2026" },
+  { name: "AWS Cloud Practitioner 2025: ML, AI, & Data Analytics", date: "Aug 2026" },
+  { name: "Generative AI, Prompting, and Ethics Awareness - Beginner", date: "Sep 2026" },
+  { name: "Prompt Engineering Foundation", date: "Apr 2026" },
+  { name: "Prompt Engineering - .NET", date: "Jun 2026" },
+  { name: "Context Engineering 101", date: "Date not listed" },
+  { name: "Intro to AI Agents: Build an Army of Digital Workers with AI", date: "Apr 2026" },
+  { name: "AI Agents: Building Teams of LLM Agents that Work for You", date: "Apr 2026" },
+  { name: "AI Agents - 101 Basics", date: "Apr 2026" },
+  { name: "AI Agents and Workflows", date: "Aug 2026" },
+  { name: "Claude AI: The AI Assistant You'll Actually Use", date: "Apr 2026" },
+  { name: "Claude, Claude Code, Claude Cowork, and Claude in MS Office", date: "May 2026" },
+  { name: "Claude Awareness Program", date: "May 2026" },
+  { name: "AI-Assisted Developer: Claude Code Knowledge Based Assessment [201-Intermediate]", date: "Sep 2026", highlighted: true },
+  { name: "Azure OpenAI Services - The Complete Guide", date: "May 2026", highlighted: true },
+  { name: "OpenAI Technical Practitioner [201-Intermediate]", date: "Sep 2026", highlighted: true },
+  { name: "Codex Deployment Practitioner Program [201-Intermediate]", date: "Sep 2026" },
+  { name: "Codex Deployment Practitioner", date: "Sep 2026" },
+  { name: "AI Assisted Developer: GitHub Copilot Knowledge Based Assessment [201-Intermediate]", date: "Sep 2026" },
+  { name: "AI-Assisted Developer: GitHub Copilot On the Job Evaluation [201-Intermediate]", date: "Sep 2026", highlighted: true },
+  { name: "AI-Assisted Development Using Gemini Assist: Knowledge Based Assessment [201-Intermediate]", date: "Oct 2026" },
+  { name: "AI Augmented Software Engineer: Gemini Assist Knowledge Based Assessment [201-Intermediate]", date: "Oct 2026" },
+  { name: "AI Assisted Developer: DA Pre-requisite", date: "Date not listed" },
+  { name: "Build with Gemini Skill Badge", date: "Sep 2026" },
+  { name: "Google Certified Partner Specialist: Gemini Enterprise Agent Development - Use Agents to Build Agents", date: "Sep 2026" },
+  { name: "Google Certified Partner Specialist: Gemini Enterprise Agent Development - Agent Evaluation and Hill Climbing", date: "Sep 2026" },
+  { name: "Google Certified Partner Specialist: Gemini Enterprise Agent Development - Build and Deploy Agents with Agent Development Kit (ADK)", date: "Oct 2026" },
+  { name: "Google Cloud Partner Specialist Certification: Gemini Enterprise Agent Development", date: "Oct 2026", highlighted: true },
+  { name: "Build with Gemini - Track 2: Platform IT Developer Badge", date: "Oct 2026", highlighted: true },
+  { name: "AWS Cloud Quest: Cloud Practitioner - Training Badge", date: "Aug 2026", highlighted: true },
+  { name: "AWS Certified Cloud Practitioner: Cloud Concepts Literacy - Beginner Level", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Benefits & Design Principles of the AWS Cloud", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Automation & Managed Services", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Migration to the AWS Cloud & Cloud Economics", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Deploying & Operating in the AWS Cloud", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Access Management", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Shared Responsibility & Compliance", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Components & Resources for Security", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Overview of Cloud Security", date: "Aug 2026" },
+  { name: "AWS Certified Cloud Practitioner: Security and Compliance Literacy - Beginner Level", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: AWS Database Services", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: AWS Compute Services", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: AWS Storage Services", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: AWS Network Services", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: AWS Developer Services & Tools", date: "Aug 2026" },
+  { name: "AWS Certified Cloud Practitioner: Cloud Technology and Services Literacy - Beginner Level", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Technical and Support Resources", date: "Aug 2026" },
+  { name: "AWS Certified Cloud Practitioner: Billing, Pricing, and Support Literacy - Beginner Level", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner 2025: Pricing, Billing, Budgeting, & Cost Management", date: "Aug 2026" },
+  { name: "CLF-C02: AWS Certified Cloud Practitioner - Practice Test", date: "Aug 2026" },
+  { name: "AWS Cloud Practitioner - CLF-C02", date: "Sep 2026" },
+  { name: "AWS Cloud Practitioner Bootcamp August 2025: Session 1 Replay", date: "Sep 2026" },
+  { name: "AWS Certified Cloud Practitioner (CLF-C02) - Skill Labs", date: "Sep 2026" },
+  { name: "AWS Cloud Practitioner Bootcamp August 2025: Session 2 Replay", date: "Sep 2026" },
+  { name: "GitHub Foundations Part 1 of 2", date: "Sep 2026" },
+  { name: "GitHub Foundations Part 2 of 2", date: "Sep 2026" },
+  { name: "GitHub Fundamentals: Administration Basics and Product Features, Part 1 of 2", date: "Sep 2026" },
+  { name: "GitHub Foundations Certification Program", date: "Oct 2026", highlighted: true },
 ];
+
+export const curatedCertifications = allCertifications.filter(
+  (cert) => cert.highlighted
+);
+ 

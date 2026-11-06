@@ -19,7 +19,7 @@ export function Certifications() {
         <h2 ref={headingRef}>Certifications & Learning</h2>
 
         <div className="cert-group">
-          <h3 className="cert-group-title">Highlighted Certifications</h3>
+          <h3 className="cert-group-title">Highlighted Certifications & Learning</h3>
           <div className="cert-chips">
             {curatedCertifications.map((cert) => (
               <div key={cert.name} className="cert-chip">
@@ -35,13 +35,13 @@ export function Certifications() {
             className="expand-btn"
             onClick={() => setShowAll(true)}
           >
-            Show all {allCertifications.length} certifications
+            Show all {allCertifications.length} credentials & courses
           </button>
         )}
 
         {showAll && (
           <div className="cert-group">
-            <h3 className="cert-group-title">All Certifications</h3>
+            <h3 className="cert-group-title">All Certifications & Learning</h3>
             <div className="cert-list">
               {allCertifications.map((cert) => (
                 <div key={cert.name} className="cert-row">
@@ -56,3 +56,5 @@ export function Certifications() {
     </section>
   );
 }
+
+ 
